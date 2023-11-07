@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+	scroll-behavior: smooth;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	margin: 0;
+}
+
+#navbar{
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	background-color: lightgreen;
+	z-index: 3;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+#navbar a,
+#right-nav a i{
+	color: black;
+	text-decoration: none;
+	text-transform: capitalize;
+	margin-right: 1em;
+}
+
+#cover img{
+	width: 100%;
+	object-fit: cover;
+	max-height: 500px;
+	filter: brightness(50%);
+	position: relative;
+	z-index: -1;
+}
+
+#welcome{
+	position: absolute;
+	top: 7em;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+}
+#welcome h1{
+	color: white;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+
+@media (min-widht : 580px){
+	#welcome{
+		top: 10em;
+		font-size: 1.5em;
+	}
+}
+@media (min-widht : 850px){
+	#welcome{
+		top: 7em;
+		font-size: 2em;
+	}
+}
+
+#about{
+	padding: 5em 1em 1em 1em;
+	background-color: lightcyan;
+}
+
+@media(min-widht : 850px){
+	#about{
+		margin: 5em;
+	}
+}
+@media(min-widht : 1000px){
+	#about{
+		margin: 10em;
+	}
+}
+#profile img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	padding: 1em;
+}
+
+/* terbaru  */
+#about h1{
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 1,2em;
+	margin: 1em;
+}
+
+#name h1{
+	font-size: 1em;
+	margin: 1em 0 0 0;
+}
+
+#name p{
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 0,8em;
+	margin: 0,5em 1em 1em 1em;
+}
+
+#hi{
+	margin: 2em 0,5em 0,5em;
+	margin: 0,5em;
+	padding: 0,5em;
+	background-color: lightgoldenrodyellow;
+	border-radius: 1em;
+	text-align: justify;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+}
+
+#about hr{
+	width: 80%;
+	height: 5px;
+	background-color: lightgray;
+	border-radius: 0.5em;
+}
+
+#education,
+#organisasi,
+#prestasi,
+#skills{
+	margin: 2em 0.5em 0.5em;
+	padding: 1em;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+#education h2,
+#organisasi h2,
+#prestasi h2,
+#skills h2{
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+#education ul li,
+#organisasi ul li,
+#prestasi ul li,
+#skills ul li{
+	text-transform: capitalize;
+}
+
+footer{
+	margin-top: 2em;
+	padding: 1em;
+	text-align: center;
+	background-color: lightgreen;
+}
+
+#gallery{
+	margin: 1em 0.5em 0.5em;
+	padding: 1em;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+#gallery h2{
+	text-align: center;
+	text-transform: capitalize;
+}
+
+#gallery img{
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	width: 100%;
+}
+
+@media (min-width : 900px){
+	#gallery img{
+		width: 30%;
+		height: 20em;
+		object-fit: cover;
+		margin: 1em;
+	}
+}
